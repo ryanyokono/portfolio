@@ -148,16 +148,20 @@ main {
 }
 
 .row {
-  display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 
-.column {
-  margin: 0 20px;
-  width: 33.33%;
+.row {
+  display: block;
 }
+
+.column {
+  width: 100%;
+  margin: 20px 0;
+}
+
 
 
 
