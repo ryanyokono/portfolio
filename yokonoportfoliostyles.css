@@ -141,30 +141,30 @@ main {
   transform: scale(1.1);
 }
 
-
-.skills-title {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.skills {
+.myskills {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.column {
-  width: 30%;
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .column {
-  flex: 1;
-  margin-right: 20px;
+  margin: 0 20px;
+  width: 33.33%;
 }
 
 
-h3 {
+
+.column h3 {
+  display: flex;
+  justify-content: ;left: ;
+  align-items: left;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -180,6 +180,7 @@ li {
   margin-bottom: 5px;
   font-size: 16px;
 }
+
 
 .spacer {
   height: 120px;
