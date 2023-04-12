@@ -53,7 +53,7 @@ nav a {
 h1 {
   font-weight: 500;
   font-size: 7rem;
-  margin-bottom: .1rem;
+  margin-bottom: 3rem;
 }
 
 h2 {
@@ -86,10 +86,10 @@ p {
 }
 
 .padding-section {
-  padding: 100px;
+  padding: 50px;
 }
 
-.buttons a {
+.btn {
   display: inline-block;
   padding: 10px 20px;
   margin-right: 20px;
@@ -101,8 +101,9 @@ p {
   transition: background-color 0.3s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.buttons a:hover {
+.btn:hover {
   background-color: #F29C6B;
+  color: white;
   transform: scale(1.1);
 }
 
@@ -110,9 +111,10 @@ p {
   display: flex;
 flex-direction: row;
 align-items: flex-start;
-padding: 0px;
+padding: 10px;
 gap: 33px;
 }
+
 
 
 .row {
@@ -170,6 +172,19 @@ gap: 33px;
     margin-top: 20px;
   }
 }
+
+@media (max-width: 992px) {
+  .myskills .col-md-4 {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .myskills .col-md-4 {
+    flex-basis: 100%;
+  }
+}
+
 
 footer {
   display: flex;
