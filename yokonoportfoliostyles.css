@@ -6,17 +6,17 @@ body {
 
 main {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 10;
   padding: 50px;
-  scroll-snap-type: y mandatory;
 }
+
 
 #my-work {
   scroll-snap-align: start;
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1800px) {
   .project {
     flex-direction: column;
   }
@@ -27,7 +27,7 @@ main {
   }
   
   .project-info {
-    margin-right: 10;
+    margin-right: auto;
     margin-left: 10;
     margin-top: 20px;
   }
@@ -76,6 +76,7 @@ h4 {
 p {
   font-weight: 300;
   font-size: 1.3rem;
+  margin-bottom: 3.5rem;
 }
 
 
@@ -101,26 +102,22 @@ nav a {
   margin-left: 30px;
 }
 
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px;
-}
+
 
 .headline h2 {
   font-size: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .padding-section {
-  padding: 100px;
+  padding: 80px;
 }
 
 .column h2 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 }
 
 

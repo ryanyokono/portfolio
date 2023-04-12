@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ryan's Portfolio</title>
     <link rel="stylesheet" href="yokonoportfoliostyles.css">
@@ -14,26 +13,29 @@
   box-sizing: border-box;
 }
 
+/* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 33.33%;
   padding: 10px;
-  height: 300px; 
+   /* Should be removed. Only for demonstration */
 }
 
+/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
   }
 }
       
-    </style>
+</style>
   </head>
   <body>
     <header>
@@ -48,22 +50,23 @@
       </nav>
     </header>
     <main>
+      <div class="spacer"></div>
       <section class="headline padding-section">
-        <h1>hi</h1>
+        <h1>hi, i'm ryan</h1>
         <p>I'm an Industrial and UX/UI Designer with a BS in Industrial Design and a UX/UI Design Bootcamp certification. I have strong problem-solving skills and excel in communication and collaboration. With an eye for design trends, I produce visually appealing and user-friendly products while maintaining high-quality standards in a fast-paced environment.</p>
         <div class="buttons">
           <a href="#my-work">My Work</a>
           <a href="resume.pdf" download>Download Resume</a>
         </div>
       </section>
-
+      <div class="spacer"></div>
       <section class="headline padding-section">
         <h1>my skills</h1>
       <section class="myskills padding-section">
         
         <div class="row">
           <div class="column">
-            <h3>Technical Skills</h3>
+            <h2>Technical Skills</h2>
             <ul>
               <li>Figma</li>
               <li>Adobe XD</li>
@@ -74,7 +77,7 @@
             </ul>
           </div>
           <div class="column">
-            <h3>UX/UI Skills</h3>
+            <h2>UI/UX Skills</h2>
             <ul>
               <li>User research</li>
               <li>Testing</li>
@@ -101,7 +104,7 @@
             </ul>
           </div>
           <div class="column">
-            <h3>Industrial Design Skills</h3>
+            <h2>Industrial Design Skills</h2>
             <ul>
               <li>Concept sketching</li>
               <li>Ideation</li>
@@ -139,7 +142,7 @@
 
       <section id="my-work">
         <div class="spacer"></div>
-        <h2 class="center">Selected Works</h2>
+        <h1 class="left">Selected Works</h1>
         <div class="spacer"></div>
         <div class="project">
           <img src="images/EnergyRedesignMockup1.png" alt="Project 1">
