@@ -89,6 +89,11 @@ p {
   padding: 50px;
 }
 
+.custom-padding-right {
+  padding-right: 30%;
+}
+
+
 .btn {
   display: inline-block;
   padding: 10px 20px;
