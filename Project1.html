@@ -19,12 +19,52 @@
           </ul>
         </nav>
       </header>
-  <main>
-    <h1>Project One</h1>
-    <section id="project-overview">
-      <h2>Project Overview</h2>
-      <p>Project overview paragraph goes here.</p>
-    </section>
+      <main>
+        <h1>Project One</h1>
+        <div class="project-container">
+          <section id="project-overview">
+            <h2>Project Overview</h2>
+            <div class="project-content">
+                <img src="images/EnergyRedesignMockup1.png" alt="EnergyRedesignMockup1">
+              <p>Looking to save the planet one pixel at a time, we took on the challenge of redesigning Energy.gov to make it more user-friendly, visually appealing, and sustainable (no pressure, right?).</p>
+            </div>
+          </section>
+        </div>
+      </main>
+      
+      <style>
+        .project-container {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      
+        #project-overview {
+          width: 50%;
+          box-sizing: border-box;
+          padding-right: 20px;
+        }
+      
+        .project-content {
+          display: flex;
+          flex-direction: column;
+        }
+      
+        .project-content img {
+          max-width: 100%;
+          height: auto;
+        }
+      
+        /* media query for mobile devices */
+        @media screen and (max-width: 768px) {
+          #project-overview {
+            width: 100%;
+            padding-right: 0;
+          }
+        }
+      </style>
+      
+      
+      
     <section id="table-of-contents">
       <h2>Table of Contents</h2>
       <ul>
