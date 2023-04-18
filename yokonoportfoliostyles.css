@@ -7,8 +7,8 @@ body {
 
 main {
   max-width: 1200px;
-  margin: 10;
-  padding: 50px;
+  margin: 50;
+  padding: 100px;
 }
 
 .name {
@@ -80,22 +80,20 @@ h4 {
 }
 
 p {
-  font-weight: 300;
-  font-size: 1.3rem;
+  font-weight: 400;
+  font-size: 1.5rem;
   margin-bottom: 3.5rem;
+}
+
+li {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: .1rem;
 }
 
 .headline h2 {
   font-size: 36px;
   margin-bottom: 40px;
-}
-
-.padding-section {
-  padding: 50px;
-}
-
-.custom-padding-right {
-  padding-right: 30%;
 }
 
 
@@ -109,6 +107,9 @@ p {
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out, transform 0.5s ease-in-out;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: .5rem;
 }
 
 .btn:hover {
@@ -121,8 +122,6 @@ p {
   display: flex;
 flex-direction: row;
 align-items: left;
-padding: 10px;
-gap: 33px;
 }
 
 
@@ -155,8 +154,8 @@ gap: 33px;
 }
 
 .project img {
-  width: 400px;
-  height: 400px;
+  width: 100px;
+  height: 100px;
   object-fit: flex;
 
 }
@@ -168,16 +167,16 @@ gap: 33px;
 
 @media screen and (max-width: 1800px) {
   .project {
-    flex-direction: column;
+    flex-direction: auto;
   }
 
   .project img {
-    width: 100%;
+    width: 70%;
     height: auto;
   }
 
   .project-info {
-    margin-right: auto;
+    margin-right: 10px;
     margin-left: 10;
     margin-top: 20px;
   }
@@ -186,12 +185,18 @@ gap: 33px;
 @media (max-width: 992px) {
   .myskills .col-md {
     flex-basis: 50%;
+    margin-right: auto;
+    margin-left: 8;
+    margin-top: 10px;
   }
 }
 
 @media (max-width: 768px) {
   .myskills .col-md {
-    flex-basis: 100%;
+    flex-basis: 80%;
+    margin-right: auto;
+    margin-left: 8;
+    margin-top: 10px;
   }
 }
 
@@ -240,4 +245,20 @@ footer {
 .contact-info .btn:hover {
   background-color: #F29C6B;
   transform: scale(1.1);
+}
+
+.arrow {
+  position: fixed;
+  bottom: 30px;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 24px;
+  cursor: ;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.arrow.show {
+  opacity: 10;
 }
