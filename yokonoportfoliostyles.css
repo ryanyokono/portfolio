@@ -167,7 +167,7 @@ align-items: left;
 
 @media screen and (max-width: 1800px) {
   .project {
-    flex-direction: auto;
+    flex-direction: column;
   }
 
   .project img {
@@ -176,7 +176,7 @@ align-items: left;
   }
 
   .project-info {
-    margin-right: 10px;
+    margin-right: auto;
     margin-left: 10;
     margin-top: 20px;
   }
@@ -194,9 +194,7 @@ align-items: left;
 @media (max-width: 768px) {
   .myskills .col-md {
     flex-basis: 80%;
-    margin-right: auto;
-    margin-left: 8;
-    margin-top: 10px;
+    
   }
 }
 
